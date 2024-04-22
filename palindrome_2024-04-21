@@ -1,0 +1,20 @@
+var isPalindrome = function(x) {
+  var reverse = 0;
+  var copy = x;
+
+  //The loop break when the copy of original number becomes zero
+  //Also negative number cannot be a palindrome
+  while (copy > 0) {
+    const digit = copy % 10;
+    reverse = reverse * 10 + digit;
+    copy = ~~(copy / 10); // this is a bitwise operator
+  }
+
+  return reverse == x;
+};
+console.log(isPalindrome(88));
+
+//Bitwise operator
+//(copy / 10): This operation divides the value of copy by 10, effectively removing the last digit from the number.
+//~~(copy / 10): The double tilde ~~ is a bitwise operator in JavaScript that converts a number to a 32-bit signed integer. When applied twice, it rounds the result of the division operation down to the nearest integer. This is a common JavaScript trick to perform a faster floor operation for positive numbers.
+//By using ~~(copy / 10), the code snippet effectively removes the last digit from the number stored in the variable copy and updates the value of copy with the remaining digits, simulating the process of moving to the next digit when checking for a palindrome.
