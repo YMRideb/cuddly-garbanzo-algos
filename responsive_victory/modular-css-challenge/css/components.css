@@ -1,0 +1,13 @@
+/* components.css */
+button {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: var(--padding);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+}
+
+button.secondary {
+    background-color: var(--secondary-color);
+}

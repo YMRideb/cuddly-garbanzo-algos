@@ -1,0 +1,10 @@
+/* theme.css */
+:root {
+    --dark-primary-color: #2c3e50;
+    --dark-secondary-color: #8e44ad;
+}
+
+body.dark-theme {
+    --primary-color: var(--dark-primary-color);
+    --secondary-color: var(--dark-secondary-color);
+}

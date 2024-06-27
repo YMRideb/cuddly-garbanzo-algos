@@ -1,0 +1,14 @@
+/* main.css */
+@import url('base.css');
+@import url('components.css');
+@import url('layout.css');
+@import url('theme.css');
+
+h1 {
+    font-size: 2em;
+    margin-bottom: calc(var(--margin) * 2);
+}
+
+p {
+    margin-bottom: var(--margin);
+}

@@ -1,0 +1,20 @@
+/* layout.css */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: var(--margin);
+}
+
+.header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: var(--padding);
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.footer {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: var(--padding);
+    border-top: 2px solid var(--primary-color);
+}
